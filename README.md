@@ -1,3 +1,3 @@
-Zabbix HP Proliant G8 hardware monitoring template\n
+Zabbix HP Proliant G8 hardware monitoring template 
 Value maps
 ....
