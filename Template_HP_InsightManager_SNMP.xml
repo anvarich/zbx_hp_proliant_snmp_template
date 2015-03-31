@@ -1,0 +1,3200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2013-11-20T14:22:01Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template_HP_InsightManager_SNMP</template>
+            <name>Template_HP_InsightManager_SNMP</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>CMPQHLTH-MIB</name>
+                </application>
+                <application>
+                    <name>CMPQIDA-MIB</name>
+                </application>
+                <application>
+                    <name>CPQSINFO-MIB</name>
+                </application>
+                <application>
+                    <name>HP Platform</name>
+                </application>
+                <application>
+                    <name>Raid-controller(Accelerator) (CMPQIDA-MIB)</name>
+                </application>
+                <application>
+                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                </application>
+                <application>
+                    <name>Power supply(CPQHLTH-MIB)</name>
+                </application>
+                <application>
+                    <name>Fans(CMPQHLTH-MIB)</name>
+                </application>
+                <application>
+                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                </application>
+                <application>
+                    <name>Temperature(CMPQHLTH-MIB)</name>
+                </application>
+                <application>
+                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>HP Platform: System status</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.2.1.3.0</snmp_oid>
+                    <key>cpqSiMibCondition.0</key>
+                    <delay>300</delay>
+                    <history>90</history>
+                    <trends>30</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>HP Platform</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>HP RAID drive status</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>HP Platform: MIB version (major)</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.2.1.1.0</snmp_oid>
+                    <key>cpqSiMibRev.cpqSiMibRevMajor.0</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts>localhost</allowed_hosts>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>0</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>CPQSINFO-MIB</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>HP Platform: MIB version (minor)</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.2.1.2.0</snmp_oid>
+                    <key>cpqSiMibRev.cpqSiMibRevMinor.0</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts>localhost</allowed_hosts>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>0</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>CPQSINFO-MIB</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>HP Platform: Thermal condition</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.6.2.6.1.0</snmp_oid>
+                    <key>cpqHeThermalCondition.0</key>
+                    <delay>300</delay>
+                    <history>2</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>HP Platform</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>HP RAID drive status</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>HP Platform: Thermal sensors</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.6.2.6.3.0</snmp_oid>
+                    <key>cpqHeThermalTempStatus</key>
+                    <delay>240</delay>
+                    <history>2</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>HP Platform</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>HP RAID drive status</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>HP Platform: Power Supply status</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.6.2.9.1.0</snmp_oid>
+                    <key>cpqHeFltTolPwrSupplyCondition</key>
+                    <delay>300</delay>
+                    <history>2</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power supply(CPQHLTH-MIB)</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>HP RAID drive status</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>HP Platform: RAM Status</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.6.2.14.4.0</snmp_oid>
+                    <key>cpqHeResilentMemStatus.0</key>
+                    <delay>300</delay>
+                    <history>2</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>HP Platform</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>HP RAID drive status</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>HP Platform: model</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.2.2.4.2.0</snmp_oid>
+                    <key>cpqSiProductName.0</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>1</inventory_link>
+                    <applications>
+                        <application>
+                            <name>HP Platform</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>HP Platform: Serial nimber</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.232.2.2.2.1.0</snmp_oid>
+                    <key>cpqSiSysSerialNum.0</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>8</inventory_link>
+                    <applications>
+                        <application>
+                            <name>HP Platform</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>HP Platform: Form Factorр</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.232.2.2.2.2.0</snmp_oid>
+                    <key>cpqSiFormFactor.0</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description>Name:  cpqSiFormFactor 
+Type:  OBJECT-TYPE 
+OID:  1.3.6.1.4.1.232.2.2.2.2 
+Full path:  iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqSystemInfo(2).cpqSiComponent(2).cpqSiAsset(2).cpqSiFormFactor(2) 
+Module:  CPQSINFO-MIB 
+     
+Parent:  cpqSiAsset 
+Previous sibling:  cpqSiSysSerialNum 
+Next sibling:  cpqSiAssetTag 
+     
+Numerical syntax:  Integer (32bit) 
+Base syntax:  INTEGER 
+Composed syntax:  INTEGER 
+Status:  mandatory 
+Max access:  read-write 
+Value list:   1: unknown(1)
+2: portable(2)
+3: laptop(3)
+4: desktop(4)
+5: tower(5)
+6: mini-tower(6)
+7: rack-mount(7) 
+       
+Description:  The form factor of the system. Setting this variable tounknown will fail.</description>
+                    <inventory_link>2</inventory_link>
+                    <applications>
+                        <application>
+                            <name>HP Platform</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>HP form factor</name>
+                    </valuemap>
+                </item>
+            </items>
+            <discovery_rules>
+                <discovery_rule>
+                    <name>CMPQHLTH-MIB:cpqHeFltTolPowerSupplyTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.232.6.2.9.3.1.2</snmp_oid>
+                    <key>cpqHeFltTolPowerSupplyBay</key>
+                    <delay>86400</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>14</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} PowerSupply Status</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.6.2.9.3.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeFltTolPowerSupplyStatus.[{#SNMPINDEX}]</key>
+                            <delay>90</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>Name:  cpqHeFltTolPowerSupplyStatus 
+Type:  OBJECT-TYPE 
+OID:  1.3.6.1.4.1.232.6.2.9.3.1.5 
+Full path:  iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqHealth(6).cpqHeComponent(2).cpqHeFltTolPwrSupply(9).cpqHeFltTolPowerSupplyTable(3).cpqHeFltTolPowerSupplyEntry(1).cpqHeFltTolPowerSupplyStatus(5) 
+Module:  CPQHLTH-MIB 
+     
+Parent:  cpqHeFltTolPowerSupplyEntry 
+Previous sibling:  cpqHeFltTolPowerSupplyCondition 
+Next sibling:  cpqHeFltTolPowerSupplyMainVoltage 
+     
+Numerical syntax:  Integer (32bit) 
+Base syntax:  INTEGER 
+Composed syntax:  INTEGER 
+Status:  mandatory 
+Max access:  read-only 
+Value list:   1: noError(1)
+2: generalFailure(2)
+3: bistFailure(3)
+4: fanFailure(4)
+5: tempFailure(5)
+6: interlockOpen(6)
+7: epromFailed(7)
+8: vrefFailed(8)
+9: dacFailed(9)
+10: ramTestFailed(10)
+11: voltageChannelFailed(11)
+12: orringdiodeFailed(12)
+13: brownOut(13)
+14: giveupOnStartup(14)
+15: nvramInvalid(15)
+16: calibrationTableInvalid(16) 
+       
+Description:  The status of the power supply.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Power supply(CPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP PSU Status</name>
+                            </valuemap>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeFltTolPowerSupplyStatus.[{#SNMPINDEX}].last(0)}=3</expression>
+                            <name>[PSU]  bistFailure(3) power supply in bay {#SNMPVALUE}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>2</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeFltTolPowerSupplyStatus.[{#SNMPINDEX}].last(0)}>5</expression>
+                            <name>[PSU]  Temporary power supply in bay {#SNMPVALUE}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeFltTolPowerSupplyStatus.[{#SNMPINDEX}].last()}=4</expression>
+                            <name>[PSU]  fan failed PSU in bay {#SNMPVALUE}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeFltTolPowerSupplyStatus.[{#SNMPINDEX}].last(0)}=2</expression>
+                            <name>[PSU] General failure power supply in bay {#SNMPVALUE}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeFltTolPowerSupplyStatus.[{#SNMPINDEX}].last()}=5</expression>
+                            <name>[PSU] Overheat power supply in bay {#SNMPVALUE}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQHLTH-MIB:cpqHeTemperatureTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.232.6.2.6.8.1.1</snmp_oid>
+                    <key>cpqHeTemperatureChassis</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Thermal Sensors</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.232.6.2.6.8.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeTemperatureCelsius.[{#SNMPINDEX}]</key>
+                            <delay>300</delay>
+                            <history>7</history>
+                            <trends>30</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>C</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Temperature(CMPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Thermal Sensor Location</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.232.6.2.6.8.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeTemperatureLocale.[{#SNMPINDEX}]</key>
+                            <delay>7200</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Temperature(CMPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP T sensors locale</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Status thermal sensor</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.232.6.2.6.8.1.6.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeTemperatureCondition.[{#SNMPINDEX}]</key>
+                            <delay>120</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Temperature(CMPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID drive status</name>
+                            </valuemap>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeTemperatureCondition.[{#SNMPINDEX}].last(0)}=3</expression>
+                            <name>[TEMP] Temperature {#SNMPINDEX} high</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description>Предупреждение</description>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeTemperatureCelsius.[{#SNMPINDEX}].last(0)}>40</expression>
+                            <name>[TEMP] Temperature {#SNMPINDEX} high {ITEM.LASTVALUE}</name>
+                            <url/>
+                            <status>1</status>
+                            <priority>2</priority>
+                            <description>Предупреждение</description>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeTemperatureCondition.[{#SNMPINDEX}].last(0)}=4</expression>
+                            <name>[TEMP] Temperature {#SNMPINDEX} very high</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description>Предупреждение</description>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeTemperatureCelsius.[{#SNMPINDEX}].last(0)}>60</expression>
+                            <name>[TEMP] Temperature {#SNMPINDEX} critical high! {ITEM.LASTVALUE}</name>
+                            <url/>
+                            <status>1</status>
+                            <priority>4</priority>
+                            <description>Предупреждение</description>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <name>HP Temperature[{#SNMPINDEX}]</name>
+                            <width>900</width>
+                            <height>200</height>
+                            <yaxismin>0.0000</yaxismin>
+                            <yaxismax>100.0000</yaxismax>
+                            <show_work_period>1</show_work_period>
+                            <show_triggers>1</show_triggers>
+                            <type>0</type>
+                            <show_legend>1</show_legend>
+                            <show_3d>0</show_3d>
+                            <percent_left>0.0000</percent_left>
+                            <percent_right>0.0000</percent_right>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>0</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>C80000</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqHeTemperatureCelsius.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQHLTH-MIB:cpqHeThermalFanTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.232.6.2.6.6.1.1</snmp_oid>
+                    <key>cpqHeThermalFanIndex</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Fan installed</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.6.2.6.6.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeThermalFanPresent.[{#SNMPINDEX}]</key>
+                            <delay>86400</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>cpqHeThermalFanStatus
+Type:	OBJECT-TYPE
+OID:	1.3.6.1.4.1.232.6.2.6.6.1.5
+Full path:	iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqHealth(6).cpqHeComponent(2).cpqHeThermal(6).cpqHeThermalFanTable(6).cpqHeThermalFanEntry(1).cpqHeThermalFanStatus(5)
+Module:	CPQHLTH-MIB
+
+Parent:	cpqHeThermalFanEntry
+Prev sibling:	cpqHeThermalFanCpuFan
+Next sibling:	cpqHeThermalFanHwLocation
+
+Numerical syntax:	Integer (32 bit)
+Base syntax:	INTEGER
+Composed syntax:	INTEGER
+Status:	mandatory
+Max access:	read-only
+Value list:	1: other(1) 
+ 	2: ok(2) 
+ 	3: failed(4) 
+
+Description:	This specifies if the fan described is operating properly.
+ 	
+ 	This value will be one of the following:
+ 	other(1)
+ 	  Fan status detection is not supported by this system or driver.
+ 	
+ 	ok(2)
+ 	  The fan is operating properly.
+ 	
+ 	failed(4)
+ 	  The fan is not operating properly.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Fans(CMPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP Fan Present</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Fan speed</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.6.2.6.6.1.7.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeThermalFanCurrentSpeed.[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>rpm</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>cpqHeThermalFanStatus
+Type:	OBJECT-TYPE
+OID:	1.3.6.1.4.1.232.6.2.6.6.1.5
+Full path:	iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqHealth(6).cpqHeComponent(2).cpqHeThermal(6).cpqHeThermalFanTable(6).cpqHeThermalFanEntry(1).cpqHeThermalFanStatus(5)
+Module:	CPQHLTH-MIB
+
+Parent:	cpqHeThermalFanEntry
+Prev sibling:	cpqHeThermalFanCpuFan
+Next sibling:	cpqHeThermalFanHwLocation
+
+Numerical syntax:	Integer (32 bit)
+Base syntax:	INTEGER
+Composed syntax:	INTEGER
+Status:	mandatory
+Max access:	read-only
+Value list:	1: other(1) 
+ 	2: ok(2) 
+ 	3: failed(4) 
+
+Description:	This specifies if the fan described is operating properly.
+ 	
+ 	This value will be one of the following:
+ 	other(1)
+ 	  Fan status detection is not supported by this system or driver.
+ 	
+ 	ok(2)
+ 	  The fan is operating properly.
+ 	
+ 	failed(4)
+ 	  The fan is not operating properly.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Fans(CMPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Status fan</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.6.2.6.6.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeThermalFanStatus.[{#SNMPINDEX}]</key>
+                            <delay>180</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>cpqHeThermalFanStatus
+Type:	OBJECT-TYPE
+OID:	1.3.6.1.4.1.232.6.2.6.6.1.5
+Full path:	iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqHealth(6).cpqHeComponent(2).cpqHeThermal(6).cpqHeThermalFanTable(6).cpqHeThermalFanEntry(1).cpqHeThermalFanStatus(5)
+Module:	CPQHLTH-MIB
+
+Parent:	cpqHeThermalFanEntry
+Prev sibling:	cpqHeThermalFanCpuFan
+Next sibling:	cpqHeThermalFanHwLocation
+
+Numerical syntax:	Integer (32 bit)
+Base syntax:	INTEGER
+Composed syntax:	INTEGER
+Status:	mandatory
+Max access:	read-only
+Value list:	1: other(1) 
+ 	2: ok(2) 
+ 	3: failed(4) 
+
+Description:	This specifies if the fan described is operating properly.
+ 	
+ 	This value will be one of the following:
+ 	other(1)
+ 	  Fan status detection is not supported by this system or driver.
+ 	
+ 	ok(2)
+ 	  The fan is operating properly.
+ 	
+ 	failed(4)
+ 	  The fan is not operating properly.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Fans(CMPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP Fan status</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Type fan</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.6.2.6.6.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqHeThermalFanCpuFan.[{#SNMPINDEX}]</key>
+                            <delay>86400</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>cpqHeThermalFanStatus
+Type:	OBJECT-TYPE
+OID:	1.3.6.1.4.1.232.6.2.6.6.1.5
+Full path:	iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqHealth(6).cpqHeComponent(2).cpqHeThermal(6).cpqHeThermalFanTable(6).cpqHeThermalFanEntry(1).cpqHeThermalFanStatus(5)
+Module:	CPQHLTH-MIB
+
+Parent:	cpqHeThermalFanEntry
+Prev sibling:	cpqHeThermalFanCpuFan
+Next sibling:	cpqHeThermalFanHwLocation
+
+Numerical syntax:	Integer (32 bit)
+Base syntax:	INTEGER
+Composed syntax:	INTEGER
+Status:	mandatory
+Max access:	read-only
+Value list:	1: other(1) 
+ 	2: ok(2) 
+ 	3: failed(4) 
+
+Description:	This specifies if the fan described is operating properly.
+ 	
+ 	This value will be one of the following:
+ 	other(1)
+ 	  Fan status detection is not supported by this system or driver.
+ 	
+ 	ok(2)
+ 	  The fan is operating properly.
+ 	
+ 	failed(4)
+ 	  The fan is not operating properly.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Fans(CMPQHLTH-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP Fan Type</name>
+                            </valuemap>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqHeThermalFanStatus.[{#SNMPINDEX}].last(0)}=4</expression>
+                            <name>[TEMP.FAN] Fan {#SNMPINDEX} вышел из строя</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQIDA-MIB:cpqDaAccelTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.232.3.2.2.2.1.1</snmp_oid>
+                    <key>cpqDaAccelCntlrIndex</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description>Array Accelerator Board Controller Index.
+ 	
+ 	This value is a logical number whose meaning is OS dependent.
+ 	The value has a direct mapping to the controller table index
+ 	such that controller 'i' has accelerator table entry 'i'</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Error code Accelator Board controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.2.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaAccelErrCode.["{#SNMPINDEX}"]</key>
+                            <delay>180</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(Accelerator) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP AB Error code</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Status Accelator Board controller(cpqDaAccelCondition)</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.2.1.9.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaAccelCondition.["{#SNMPINDEX}"]</key>
+                            <delay>180</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(Accelerator) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID drive status</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Status Accelator Board controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.2.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaAccelStatus.["{#SNMPINDEX}"]</key>
+                            <delay>180</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(Accelerator) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP AB Controller Status</name>
+                            </valuemap>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaAccelCondition.["{#SNMPINDEX}"].last(0)}=3</expression>
+                            <name>[RAID.AB] Accelerator board {#SNMPINDEX} статус degraded(3)</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaAccelCondition.["{#SNMPINDEX}"].last(0)}=4</expression>
+                            <name>[RAID.AB] Accelerator board {#SNMPINDEX} статус failed(4)</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQIDA-MIB:cpqDaCntlrPerfTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.232.3.2.7.1.1.1</snmp_oid>
+                    <key>cpqDaCntlrPerfCntlrIndex</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Load CPU Raid-controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.7.1.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaCntlrPerfCpuPercentBusy.[{#SNMPINDEX}]</key>
+                            <delay>180</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>%</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Average latency Raid-controller, с</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.7.1.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaCntlrPerfAvgLatency.[{#SNMPINDEX}]</key>
+                            <delay>180</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units>s</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>0.01</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaCntlrPerfCpuPercentBusy.[{#SNMPINDEX}].last(0)}>80&amp;{Template_HP_InsightManager_SNMP:cpqDaCntlrPerfCpuPercentBusy.[{#SNMPINDEX}].last(0)}&lt;1000</expression>
+                            <name>[RAID.CPU] {#SNMPINDEX} Load CPU controller critical high</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description> &lt;1000 to avoid bugged readings</description>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <name>[RAID] Performance Raid-controller</name>
+                            <width>900</width>
+                            <height>200</height>
+                            <yaxismin>0.0000</yaxismin>
+                            <yaxismax>100.0000</yaxismax>
+                            <show_work_period>1</show_work_period>
+                            <show_triggers>1</show_triggers>
+                            <type>0</type>
+                            <show_legend>1</show_legend>
+                            <show_3d>0</show_3d>
+                            <percent_left>0.0000</percent_left>
+                            <percent_right>0.0000</percent_right>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>0</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>C80000</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaCntlrPerfCpuPercentBusy.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>00C800</color>
+                                    <yaxisside>1</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaCntlrPerfAvgLatency.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQIDA-MIB:cpqDaCntlrTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.232.3.2.2.1.1.1</snmp_oid>
+                    <key>cpqDaCntlrIndex</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Number of internal ports Raid-controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.1.1.25.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaCntlrNumberOfInternalPorts.[{#SNMPINDEX}]</key>
+                            <delay>86400</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>Name:  cpqDaCntlrNumberOfInternalPorts 
+Type:  OBJECT-TYPE 
+OID:  1.3.6.1.4.1.232.3.2.2.1.1.25 
+Full path:  iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqDriveArray(3).cpqDaComponent(2).cpqDaCntlr(2).cpqDaCntlrTable(1).cpqDaCntlrEntry(1).cpqDaCntlrNumberOfInternalPorts(25) 
+Module:  CPQIDA-MIB 
+     
+Parent:  cpqDaCntlrEntry 
+Previous sibling:  cpqDaCntlrExpandPriority 
+Next sibling:  cpqDaCntlrNumberOfExternalPorts 
+     
+Numerical syntax:  Integer (32bit) 
+Base syntax:  INTEGER 
+Composed syntax:  INTEGER 
+Status:  mandatory 
+Max access:  read-only 
+       
+Description:  Array Controller Number of Internal Ports.This value is the number of internal SAS connectors on thecontroller.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Model Raid-controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.1.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaCntlrModel.["{#SNMPINDEX}"]</key>
+                            <delay>86400</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex>50/1-7,00:00-24:00</delay_flex>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>Name:	cpqDaCntlrModel
+Type:	OBJECT-TYPE
+OID:	1.3.6.1.4.1.232.3.2.2.1.1.2
+Full path:	iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqDriveArray(3).cpqDaComponent(2).cpqDaCntlr(2).cpqDaCntlrTable(1).cpqDaCntlrEntry(1).cpqDaCntlrModel(2)
+Module:	CPQIDA-MIB
+
+Parent:	cpqDaCntlrEntry
+Prev sibling:	cpqDaCntlrIndex
+Next sibling:	cpqDaCntlrFWRev
+
+Numerical syntax:	Integer (32 bit)
+Base syntax:	INTEGER
+Composed syntax:	INTEGER
+Status:	mandatory
+Max access:	read-only
+Value list:	1: other(1) 
+ 	2: ida(2) 
+ 	3: idaExpansion(3) 
+ 	4: ida-2(4) 
+ 	5: smart(5) 
+ 	6: smart-2e(6) 
+ 	7: smart-2p(7) 
+ 	8: smart-2sl(8) 
+ 	9: smart-3100es(9) 
+ 	10: smart-3200(10) 
+ 	11: smart-2dh(11) 
+ 	12: smart-221(12) 
+ 	13: sa-4250es(13) 
+ 	14: sa-4200(14) 
+ 	15: sa-integrated(15) 
+ 	16: sa-431(16) 
+ 	17: sa-5300(17) 
+ 	18: raidLc2(18) 
+ 	19: sa-5i(19) 
+ 	20: sa-532(20) 
+ 	21: sa-5312(21) 
+ 	22: sa-641(22) 
+ 	23: sa-642(23) 
+ 	24: sa-6400(24) 
+ 	25: sa-6400em(25) 
+ 	26: sa-6i(26) 
+ 	27: sa-generic(27) 
+ 	28: sa-p600(29) 
+ 	29: sa-p400(30) 
+ 	30: sa-e200(31) 
+ 	31: sa-e200i(32) 
+ 	32: sa-p400i(33) 
+ 	33: sa-p800(34) 
+ 	34: sa-e500(35) 
+ 	35: sa-p700m(36) 
+
+Description:	Array Controller Model.
+ 	
+ 	The type of controller card.  The valid types are:
+ 	
+ 	Other  (1)
+ 	  You may need to upgrade your driver software and\or instrument
+ 	  agent(s).  You have a drive array controller in the system
+ 	  that the instrument agent does not recognize.
+ 	
+ 	IDA (2)
+ 	  Compaq 32-Bit Intelligent Drive Array Controller.
+ 	  The physical drives are located inside the system.
+ 	
+ 	IDA Expansion (3)
+ 	  Compaq 32-Bit Intelligent Drive Array Expansion Controller.
+ 	  The physical drives are located in the Array Expansion System
+ 	  that is connected to the system by a cable.
+ 	
+ 	IDA - 2 (4)
+ 	  Compaq Intelligent Drive Array Controller-2 (IDA-2).
+ 	  The physical drives are located inside the system.
+ 	
+ 	SMART (5)
+ 	  Compaq SMART Array Controller.  The physical drives can be
+ 	  located inside the system or outside the system in a ProLiant
+ 	  Storage System that is connected to the system by a cable.
+ 	
+ 	SMART - 2/E (6)
+ 	  Compaq SMART-2/E Array Controller.  The physical drives can be
+ 	  located inside the system or outside the system in a ProLiant
+ 	  Storage System that is connected to the system by a cable.
+ 	
+ 	SMART - 2/P (7)
+ 	  Compaq SMART-2/P Array Controller.  The physical drives can be
+ 	  located inside the system or outside the system in a ProLiant
+ 	  Storage System that is connected to the system by a cable.
+ 	
+ 	SMART - 2SL (8)
+ 	  Compaq SMART-2SL Array Controller.  The physical drives can be
+ 	  located inside the system or outside the system in a ProLiant
+ 	  Storage System that is connected to the system by a cable.
+ 	
+ 	Smart - 3100ES (9)
+ 	  Compaq Smart Array 3100ES Controller.  The physical drives are
+ 	  located inside the system.
+ 	
+ 	Smart - 3200 (10)
+ 	  Compaq Smart Array 3200 Controller.  The physical drives can
+ 	  be located inside the system or outside the system in a
+ 	  ProLiant Storage System that is connected to the system by a
+ 	  cable.
+ 	
+ 	SMART - 2DH (11)
+ 	  Compaq SMART-2DH Array Controller.  The physical drives can be
+ 	  located inside the system or outside the system in a ProLiant
+ 	  Storage System that is connected to the system by a cable.
+ 	
+ 	Smart - 221 (12)
+ 	  Compaq Smart Array 221 Controller.  The physical drives can be
+ 	  located inside the system or outside the system in a ProLiant
+ 	  Storage System that is connected to the system by a cable.
+ 	
+ 	Smart Array 4250ES (13)
+ 	  Compaq Smart Array 4250ES Controller.  The physical drives are
+ 	  located inside the system.
+ 	
+ 	Smart Array 4200 (14)
+ 	  Compaq Smart Array 4200 Controller.  The physical drives can
+ 	  be located inside the system or outside the system in a
+ 	  ProLiant Storage System that is connected to the system by a
+ 	  cable.
+ 	
+ 	Integrated Smart Array (15)
+ 	  Compaq Integrated Smart Array Controller.  The physical drives
+ 	  can be located inside the system or outside the system in a
+ 	  ProLiant Storage System that is connected to the system by a
+ 	  cable.
+ 	
+ 	Smart Array 431 (16)
+ 	  Compaq Smart Array 431 Controller.  The physical drives can be
+ 	  located inside the system or outside the system in a ProLiant
+ 	  Storage System that is connected to the system by a cable.
+ 	
+ 	Smart Array 5300 (17)
+ 	  HP Smart Array 5300 Controller.
+ 	
+ 	RAID LC2 Controller (18)
+ 	  Compaq RAID LC2 Controller.
+ 	
+ 	Smart Array 5i (19)
+ 	  HP Smart Array 5i Controller.
+ 	
+ 	Smart Array 532 (20)
+ 	  Compaq Smart Array 532 Controller.
+ 	
+ 	Smart Array 5312 (21)
+ 	  Compaq Smart Array 5312 Controller.
+ 	
+ 	Smart Array 641 (22)
+ 	  HP Smart Array 641 Controller.
+ 	
+ 	Smart Array 642 (23)
+ 	  HP Smart Array 642 Controller.
+ 	
+ 	Smart Array 6400 (24)
+ 	  HP Smart Array 6400 Controller.
+ 	
+ 	Smart Array 6400 EM (25)
+ 	  HP Smart Array 6400 EM Controller.
+ 	
+ 	Smart Array 6i (26)
+ 	  HP Smart Array 6i Controller.
+ 	
+ 	Generic Array (27)
+ 	  Array Controller.
+ 	
+ 	Reserved (28)
+ 	
+ 	Smart Array P600 (29)
+ 	  HP Smart Array P600 Controller.
+ 	
+ 	Smart Array P400 (30)
+ 	  HP Smart Array P400 Controller.
+ 	
+ 	Smart Array E200 (31)
+ 	  HP Smart Array E200 Controller.
+ 	
+ 	Smart Array E200i (32)
+ 	  HP Smart Array E200i Controller.
+ 	
+ 	Smart Array P400i (33)
+ 	  HP Smart Array P400i Controller.
+ 	
+ 	Smart Array P800 (34)
+ 	  HP Smart Array P800 Controller.
+ 	
+ 	Smart Array E500 (35)
+ 	  HP Smart Array E500 Controller.
+ 	
+ 	Smart Array P700m (36)
+ 	  HP Smart Array P700m Controller.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID model</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Slot Raid-controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.1.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaCntlrSlot.["{#SNMPINDEX}"]</key>
+                            <delay>86400</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>Name:  cpqDaCntlrSlot 
+Type:  OBJECT-TYPE 
+OID:  1.3.6.1.4.1.232.3.2.2.1.1.5 
+Full path:  iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqDriveArray(3).cpqDaComponent(2).cpqDaCntlr(2).cpqDaCntlrTable(1).cpqDaCntlrEntry(1).cpqDaCntlrSlot(5) 
+Module:  CPQIDA-MIB 
+     
+Parent:  cpqDaCntlrEntry 
+Previous sibling:  cpqDaCntlrStndIntr 
+Next sibling:  cpqDaCntlrCondition 
+     
+Numerical syntax:  Integer (32bit) 
+Base syntax:  INTEGER 
+Composed syntax:  INTEGER 
+Status:  mandatory 
+Max access:  read-only 
+Size list:   1: 0..255 
+       
+Description:  Array Controller Slot.This identifies the physical slot where the array controllerresides in the system.  For example, if this value is three,the array controller is located in slot three of your computer.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Status Raid-controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.1.1.6.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaCntlrCondition.["{#SNMPINDEX}"]</key>
+                            <delay>120</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex>50/1-7,00:00-24:00</delay_flex>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>Name:	cpqDaCntlrCondition
+Type:	OBJECT-TYPE
+OID:	1.3.6.1.4.1.232.3.2.2.1.1.6
+Full path:	iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqDriveArray(3).cpqDaComponent(2).cpqDaCntlr(2).cpqDaCntlrTable(1).cpqDaCntlrEntry(1).cpqDaCntlrCondition(6)
+Module:	CPQIDA-MIB
+
+Parent:	cpqDaCntlrEntry
+Prev sibling:	cpqDaCntlrSlot
+Next sibling:	cpqDaCntlrProductRev
+
+Numerical syntax:	Integer (32 bit)
+Base syntax:	INTEGER
+Composed syntax:	INTEGER
+Status:	mandatory
+Max access:	read-only
+Value list:	1: other(1) 
+ 	2: ok(2) 
+ 	3: degraded(3) 
+ 	4: failed(4) 
+
+Description:	The condition of the device.  This value represents the overall
+ 	condition of this controller, and any associated logical drives,
+ 	physical drives, and array accelerators.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID drive status</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Current role Raid-controller</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.2.1.1.9.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaCntlrCurrentRole.[{#SNMPINDEX}]</key>
+                            <delay>3600</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>Array Controller Current Role.For duplexed array controllers, this is the controllers currentrole.  The following values are valid:other (1)  Indicates that the instrument agent does not recognize the  role of the controller.  You may need to upgrade the instrument  agent.notDuplexed (2)  This array controller is not duplexed.active (3)  This duplexed array controller is the active controller.backup (4)  This duplexed array controller is the backup controller.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Raid-controller(CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID current role</name>
+                            </valuemap>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaCntlrCondition.["{#SNMPINDEX}"].last(0)}=3</expression>
+                            <name>[RAID.CONT] Controller {#SNMPINDEX} статус degraded(3)!</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaCntlrCondition.["{#SNMPINDEX}"].last(0)}=4</expression>
+                            <name>[RAID.CONT] Controller {#SNMPINDEX} статус failed(4)!</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>5</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQIDA-MIB:cpqDaLogDrvPerfTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.232.3.2.8.1.1.2</snmp_oid>
+                    <key>cpqDaLogDrvPerfIndex</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Cache hits</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.8.1.1.9.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvPerfCacheHits.[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>cacheHits/s</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Cache misses</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.8.1.1.10.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvPerfCacheMisses.[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>cachemisses/s</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Read Ahead Sectors</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.8.1.1.11.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvPerfReadAheadSectors.[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>sectors/s</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Disk writes, Writes/s</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.8.1.1.7.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvPerfWrites.[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>Writes/s</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Average queue length</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.8.1.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvPerfAvgQueueDepth.[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description>Array Logical Drive Performance Monitor Average Queue Depth.
+ 	
+ 	This value indicates the average command queue depth of the
+ 	logical volume.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPINDEX} Disk reads, Read/s</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.8.1.1.6.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvPerfReads.[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>Read/s</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaLogDrvPerfAvgQueueDepth.[{#SNMPINDEX}].avg(300)}>2</expression>
+                            <name>[RAID.PERF] Logical disk queue length {#SNMPINDEX} critical high</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>2</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <name>[RAID.PERF] {#SNMPINDEX } Performance Logical disk </name>
+                            <width>900</width>
+                            <height>200</height>
+                            <yaxismin>0.0000</yaxismin>
+                            <yaxismax>100.0000</yaxismax>
+                            <show_work_period>1</show_work_period>
+                            <show_triggers>1</show_triggers>
+                            <type>0</type>
+                            <show_legend>1</show_legend>
+                            <show_3d>0</show_3d>
+                            <percent_left>0.0000</percent_left>
+                            <percent_right>0.0000</percent_right>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>0</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>C80000</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaLogDrvPerfWrites.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>00C800</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaLogDrvPerfReads.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>0000C8</color>
+                                    <yaxisside>1</yaxisside>
+                                    <calc_fnc>7</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaLogDrvPerfAvgQueueDepth.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>3</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>C800C8</color>
+                                    <yaxisside>1</yaxisside>
+                                    <calc_fnc>7</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaLogDrvPerfCacheHits.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>4</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>00C8C8</color>
+                                    <yaxisside>1</yaxisside>
+                                    <calc_fnc>7</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaLogDrvPerfCacheMisses.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>5</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>C8C800</color>
+                                    <yaxisside>1</yaxisside>
+                                    <calc_fnc>7</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template_HP_InsightManager_SNMP</host>
+                                        <key>cpqDaLogDrvPerfReadAheadSectors.[{#SNMPINDEX}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQIDA-MIB:cpqDaLogDrvTable</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.232.3.2.3.1.1.14</snmp_oid>
+                    <key>cpqDaLogDrvOsName</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description>Name:  cpqDaLogDrvOsName 
+Type:  OBJECT-TYPE 
+OID:  1.3.6.1.4.1.232.3.2.3.1.1.14 
+Full path:  iso(1).org(3).dod(6).internet(1).private(4).enterprises(1).compaq(232).cpqDriveArray(3).cpqDaComponent(2).cpqDaLogDrv(3).cpqDaLogDrvTable(1).cpqDaLogDrvEntry(1).cpqDaLogDrvOsName(14) 
+Module:  CPQIDA-MIB 
+     
+Parent:  cpqDaLogDrvEntry 
+Previous sibling:  cpqDaLogDrvStripeSize 
+Next sibling:  cpqDaLogDrvBlinkTime 
+     
+Numerical syntax:  Octets 
+Base syntax:  OCTET STRING 
+Composed syntax:  DisplayString 
+Status:  mandatory 
+Max access:  read-only 
+Size list:   1: 0..255 
+       
+Description:  Logical Drive OS Name.The OS name for this array logical drive.  This field will bea null (size 0) string if the agent does not support OS name.</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Name Logical disk  in OS</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.232.3.2.3.1.1.14.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvOsName.[{#SNMPINDEX}]</key>
+                            <delay>86400</delay>
+                            <history>7</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>1</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Status Logical disk </name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.232.3.2.3.1.1.11.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvCondition.[{#SNMPINDEX}]</key>
+                            <delay>180</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID drive status</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Current status Logical disk </name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.232.3.2.3.1.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvStatus.[{#SNMPINDEX}]</key>
+                            <delay>180</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID drive status</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Fault Tollerance Logical disk </name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.232.3.2.3.1.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaLogDrvFaultTol.[{#SNMPINDEX}]</key>
+                            <delay>180</delay>
+                            <history>30</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Logical disks(in RAID) (CMPQIDA-MIB)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID fault tolerance</name>
+                            </valuemap>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaLogDrvFaultTol.[{#SNMPINDEX}].last(0)}=2</expression>
+                            <name>[RAID.LDRIVE] Логический диск {#SNMPVALUE}.{#SNMPINDEX} не имеет отказоуйстойчивости.</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>2</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>CMPQIDA-MIB:cpqDaPhyDrvEntry</name>
+                    <type>4</type>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.5</snmp_oid>
+                    <key>cpqDaPhyDrvBay</key>
+                    <delay>180</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <filter>:</filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Work-in hours physical disk, h.</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.9.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaPhyDrvRefHours.[{#SNMPINDEX}]</key>
+                            <delay>3600</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>s</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>3600</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Reallocated sectors physical disk</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.8.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaPhyDrvUsedReallocs.[{#SNMPINDEX}]</key>
+                            <delay>900</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Model physical disk</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaPhyDrvModel.[{#SNMPINDEX}]</key>
+                            <delay>7200</delay>
+                            <history>7</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>1</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Bay number physical disk</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaPhyDrvBay.[{#SNMPINDEX}]</key>
+                            <delay>86400</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Rotation Speed</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.59.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaPhyDrvRotationalSpeed.[{#SNMPINDEX}]</key>
+                            <delay>86400</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP Phys disk  rotation speed</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Status SMART physical disk</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.57.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaPhyDrvSmartStatus.[{#SNMPINDEX}]</key>
+                            <delay>900</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID SMART status</name>
+                            </valuemap>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>{#SNMPVALUE} Status physical disk (cpqDaPhyDrvStatus)</name>
+                            <type>4</type>
+                            <snmp_community>{$COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.232.3.2.5.1.1.6.{#SNMPINDEX}</snmp_oid>
+                            <key>cpqDaPhyDrvStatus.[{#SNMPINDEX}]</key>
+                            <delay>300</delay>
+                            <history>7</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port>161</port>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Physiscal disks(in RAID) (CMPQIDA-MIB))</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HP RAID physical disk status</name>
+                            </valuemap>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaPhyDrvStatus.[{#SNMPINDEX}].last(0)}=4</expression>
+                            <name>[HDD.FAIL] {#SNMPINDEX}  Ожидается выход из строя, статус predictiveFailure(4).</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaPhyDrvStatus.[{#SNMPINDEX}].last(0)}=3</expression>
+                            <name>[HDD.FAIL] {#SNMPINDEX} Сбой диска, статус failed(3).</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaPhyDrvUsedReallocs.[{#SNMPINDEX}].prev(0)}>0&amp;{Template_HP_InsightManager_SNMP:cpqDaPhyDrvUsedReallocs.[{#SNMPINDEX}].change(0)}>0</expression>
+                            <name>[HDD.REALLOC] {#SNMPINDEX} Кол-во перемещенных сектороin увеличилось!</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template_HP_InsightManager_SNMP:cpqDaPhyDrvSmartStatus.[{#SNMPINDEX}].last(0)}=3</expression>
+                            <name>[HDD.SMART] {#SNMPINDEX} SMART статус: predictiveFailure(3). Замените диск</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+            </discovery_rules>
+            <macros>
+                <macro>
+                    <macro>{$COMMUNITY}</macro>
+                    <value>virton</value>
+                </macro>
+                <macro>
+                    <macro>{$CPQDACNTLRPERFCNTLRINDEX}</macro>
+                    <value>1</value>
+                </macro>
+                <macro>
+                    <macro>{$CPQDALOGDRVPERFCNTLRINDEX}</macro>
+                    <value>1</value>
+                </macro>
+                <macro>
+                    <macro>{$CPQDALOGDRVPERFINDEX1}</macro>
+                    <value>1</value>
+                </macro>
+                <macro>
+                    <macro>{$CPQDALOGDRVPERFINDEX2}</macro>
+                    <value>2</value>
+                </macro>
+            </macros>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template_HP_InsightManager_SNMP:cpqHeFltTolPwrSupplyCondition.last(0)}>2</expression>
+            <name>HP: Один из БП вышел из строя!</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template_HP_InsightManager_SNMP:cpqHeResilentMemStatus.0.last(0)}>2</expression>
+            <name>HP: Ошибка модулей ОЗУ!</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template_HP_InsightManager_SNMP:cpqHeThermalTempStatus.last(0)}>2</expression>
+            <name>HP: Перегрев!</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template_HP_InsightManager_SNMP:cpqHeThermalCondition.0.last(0)}>2</expression>
+            <name>HP: Проблемы с охлаждением!</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template_HP_InsightManager_SNMP:cpqSiMibCondition.0.last(0)}>2</expression>
+            <name>HP: Проверьте сервер</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template_HP_InsightManager_SNMP:cpqSiMibCondition.0.nodata(1800)}=1</expression>
+            <name>[AV.SNMP] HP-SNMP-AGENT не отвечает. Мониторинг по SNMP недоступен.</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+    </triggers>
+</zabbix_export>
